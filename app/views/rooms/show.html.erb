@@ -1,0 +1,9 @@
+<p>チャットルーム</p>
+
+<% @chats.each do |chat| %>
+  <p><%= chat.content %></p>
+<% end %>
+
+<form>
+  <textarea data-behavior="room_speaker" data-chat_room_id="1" placeholder="メッセージを入力" class="room_message-form_textarea"></textarea>
+</form>
